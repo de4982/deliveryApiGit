@@ -1,23 +1,14 @@
 # deliveryApiGit
- 
+
+Просмотр заказа:
+GET
+/api/tracking/2
+
+Просмотр постамата:
 GET
 /api/postamat/2
 
-DELETE
-/api/order/2
-
-PUT
-/api/order/2
-{
-"Products": [
-        "product 1"
-    ],
-"Cost":7,
-"Postamat": 1,
-"Phone":"+7900-333-22-02",
-"Recipient":"recipient 2"
-}
-
+Добавление заказа:
 POST
 /api/order/add
 {
@@ -33,7 +24,22 @@ POST
 "Recipient":"Билл Маркович Брин"
 }
 
-GET
-/api/tracking/2
+Обновление заказа:
+PUT
+/api/order/2
+{
+"Products": [
+        "product 1"
+    ],
+"Cost":7,
+"Postamat": 1,
+"Phone":"+7900-333-22-02",
+"Recipient":"recipient 2"
+}
+
+Отмена заказа:
+DELETE
+/api/order/2
+
 GET
 /endpoints
