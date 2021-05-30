@@ -1,5 +1,7 @@
 # deliveryApiGit
 
+Данные сохраняются в MS SQL, для подключения необходимо указать ConnectionString в appsetings
+
 Просмотр заказа:
 GET
 /api/tracking/2
